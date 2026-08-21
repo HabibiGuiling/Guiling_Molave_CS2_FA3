@@ -15,7 +15,7 @@ def check_password_length(password):
     password_length = len(password)
 
     """Returns True if the password length is between 8 and 15 characters."""
-    if password_length >= 8 and password_length <= 15:
+    if password_length > 8 and password_length < 15:
         return True
     else:
         return False
